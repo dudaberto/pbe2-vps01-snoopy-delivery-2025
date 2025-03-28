@@ -24,5 +24,34 @@ Desenvolver as funcionalidades conforme requisitos
 - [CT005] Cadastre, altere e exclua um pedido.
 
 ## Tecnologias
-
+node.js 
+expre
+prisma orm 
+java script
+mySQL
 ## Passo a Passo de como executar a API
+-- Instalar o Node.js e o MySQL
+
+-- Configurar o Banco de Dados
+Acesse o MySQL e crie o banco de dados:
+CREATE DATABASE snoopy_delivery;
+Após isso, configure seu .env:
+
+DATABASE_URL="mysql://usuario:senha@localhost:3306/snoopy_delivery"
+-- Clonar o Projeto
+Abra o terminal e execute:
+git clone https://github.com/seu-usuario/snoopy-delivery.git
+cd snoopy-delivery/api
+
+-- Instalar as Dependências
+npm install
+
+-- Configurar o Prisma
+Crie as tabelas no banco de dados:
+npx prisma migrate dev --name init
+
+-- Iniciar o Servidor
+Para rodar o servidor:
+npm start
+Ou, para reiniciar automaticamente em caso de alterações:
+npm run dev

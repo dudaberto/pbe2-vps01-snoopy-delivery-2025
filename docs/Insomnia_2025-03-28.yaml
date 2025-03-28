@@ -1,0 +1,248 @@
+type: collection.insomnia.rest/5.0
+name: snoopy
+meta:
+  id: wrk_bd6d11ea070447b19fcfbf7e421d91a4
+  created: 1743187453091
+  modified: 1743187453091
+collection:
+  - name: Motoristas
+    meta:
+      id: fld_cf0f7ab2720a45ee8178c483f26cf05a
+      created: 1743187462244
+      modified: 1743187488742
+      sortKey: -1743187462244
+    children:
+      - url: http://localhost:3001/motoristas/1
+        name: New Request
+        meta:
+          id: req_ca054fdc32a548c1ad350f4aaf6c3aed
+          created: 1743187468129
+          modified: 1743187554520
+          isPrivate: false
+          sortKey: -1743187468129
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/5
+        name: New Request
+        meta:
+          id: req_95e81fa28c324961afcc799830bdc093
+          created: 1743187489564
+          modified: 1743187973565
+          isPrivate: false
+          sortKey: -1743187489564
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "email": "wellinton@email.com",
+              "nome": "Wellinton",
+              "telefones": null
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: New Request
+        meta:
+          id: req_f922d5143bae440fa13d9ae45bf5951e
+          created: 1743187491159
+          modified: 1743187766672
+          isPrivate: false
+          sortKey: -1743187491159
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "email": "wellinton@email.com",
+              "nome": "Wellinton",
+              "telefones": "11999999888"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/1
+        name: New Request
+        meta:
+          id: req_2e33f42f02ab4e3e833e4ffb7878838a
+          created: 1743187492626
+          modified: 1743187543062
+          isPrivate: false
+          sortKey: -1743187492626
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: New Request
+        meta:
+          id: req_2827c9e6bfb84c779f47007f85c7c21f
+          created: 1743187493783
+          modified: 1743187520886
+          isPrivate: false
+          sortKey: -1743187493783
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Pedidos
+    meta:
+      id: fld_733ac8b3e4f04531b940818057c96cd6
+      created: 1743187848683
+      modified: 1743187986583
+      sortKey: -1743187848683
+    children:
+      - url: http://localhost:3001/pedidos/7
+        name: New Request
+        meta:
+          id: req_cd05850f00ee4745abb906f815f1bccc
+          created: 1743187851034
+          modified: 1743188375670
+          isPrivate: false
+          sortKey: -1743187851034
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos/1
+        name: New Request
+        meta:
+          id: req_652c22646aa64c4a8b31c6645ffc398e
+          created: 1743187852233
+          modified: 1743187998665
+          isPrivate: false
+          sortKey: -1743187852233
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: New Request
+        meta:
+          id: req_d207d0e02bb141ea8e47098409f00799
+          created: 1743187853667
+          modified: 1743188367464
+          isPrivate: false
+          sortKey: -1743187853667
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "valor": 49.90,
+              "produto": "Pizza de Mussarela",
+              "endereco": "Rua das Pedras, 456",
+              "numero": "789",
+              "complemento": "Apto 201",
+              "cep": "12345-676",
+              "motoristaId": 5
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: New Request
+        meta:
+          id: req_b0c91288e6af4fe393efa591f1e7a784
+          created: 1743187854892
+          modified: 1743187990519
+          isPrivate: false
+          sortKey: -1743187854892
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_cf7a27a4f24e19baee8074821388ab0a8c20a15a
+    created: 1743187453098
+    modified: 1743187453098
+environments:
+  name: Base Environment
+  meta:
+    id: env_cf7a27a4f24e19baee8074821388ab0a8c20a15a
+    created: 1743187453096
+    modified: 1743187453096
+    isPrivate: false
